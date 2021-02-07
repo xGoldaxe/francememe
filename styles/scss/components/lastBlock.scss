@@ -1,0 +1,19 @@
+.lastBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .lastBlock {
+        &__text {
+            width: 100%;
+            text-align: left;
+        }
+    }
+}

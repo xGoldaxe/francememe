@@ -1,0 +1,11 @@
+.linkBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linkLine {
+    width: calc(100% - 30px);
+    height: 3px;
+    background: white;
+    transform-origin: center left;
+}

@@ -1,0 +1,43 @@
+.whiteBlackButton {
+    transition-property: color,box-shadow, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        box-shadow: 0 0 10px #734185;
+        color: #9B51E0;
+        background-color: darken(white, 5%);
+    }
+}
+
+.smallWhiteButton {
+    transition-property: color,box-shadow, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        box-shadow: 0 0 5px #ad72c2;
+        color: #9B51E0;
+        background-color: darken(white, 5%);
+    }
+}
+
+.blackButton {
+    transition-property: color,box-shadow, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        box-shadow: 0 0 10px #734185;
+        color: #9B51E0;
+        background-color: lighten(black , 5%);
+    }
+}
+
+.bigBlackButton {
+    transition-property: color,box-shadow, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+        box-shadow: 0 0 20px #696969;
+        background-color: lighten(black , 5%);
+    }
+}
+

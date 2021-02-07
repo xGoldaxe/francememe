@@ -1,0 +1,51 @@
+.lastCallToAction {
+    margin-top: 159px;
+
+    font-family: 'DnProSemiBold';
+    font-size: 26px;
+
+    width: 100%;
+    padding-bottom: 30px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+        width: 100%;
+        font-family: DnProBoldItalic;
+        margin-bottom: 52px;
+        position: relative;
+        &::after {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: url('/image/lastCallToAction.svg');
+        }
+    }
+
+    &__button {
+        width: 433px;
+        max-width: 100%;
+        height: 89px; 
+        background: black;
+        border-radius: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: white;
+    
+    
+            strong {
+                font-family: DnProBoldItalic;
+                letter-spacing: 2px;
+            }
+        }
+    }
+
+}

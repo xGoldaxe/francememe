@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p, h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.allBlock {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+strong {
+    font-family: DnProBoldItalic;
+    font-weight: 100;
+}
+
+.facecat {
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: none;
+    outline: none;
+    color: white;
+    &:visited {
+        color: white;
+    }
+}

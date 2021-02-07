@@ -1,0 +1,181 @@
+@keyframes slide{
+    0% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(110%);
+    }
+} 
+.header--wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #9B51E0 0%, #BB6BD9 100%);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.leftCity {
+    position: absolute;
+    bottom:0;
+    left: calc(50% - 983px);
+    z-index: 5;
+}
+.rightCity {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% + 320px);
+    z-index: 5;
+}
+
+.buildings {
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    left: calc(50% - 450px);
+}
+
+.leftRay {
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 600px);
+    opacity: 0.5;
+}
+.rightRay {
+    position: absolute;
+    bottom: 176px;
+    left: calc(50% - 97px);
+}
+
+.cloud--wrapper {
+    width: 150vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: linear 200s infinite slide;
+    animation-delay: -100s;
+}
+.middleCloud {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.bigCloud {
+    position: absolute;
+    bottom: 0;
+    left: -400px;
+}
+.cloud--wrapper2 {
+    width: 150vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: linear 200s infinite slide;
+}
+.cloud4 {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    opacity: 0.5;
+}
+
+.flyingDog--wrapper {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: linear 100s infinite slide;
+    animation-delay: -50s;
+}
+.flyingDog--wrapper2 {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    animation: linear 50s infinite slide;
+    animation-delay: -10s;
+    img {
+        transform: scale(1.2)
+    }
+}
+.flyingDog {
+    position: absolute;
+    bottom: 335px;
+    left: 0;
+    z-index: 999;
+}
+.flyingDogCloud {
+    position: absolute;
+    bottom: 330px;
+    left: -88px;
+    z-index: 999;
+}
+
+.diamond {
+    position: absolute;
+    bottom: 410px;
+    left: calc(50% + 160px);
+}
+
+@media screen and (max-width: 750px) {
+    .leftCity {
+        left: 50%;
+        transform: translate(-90%);
+    }
+    
+    .rightCity {
+        display: none;
+    }
+    
+    .buildings {
+        display: none;
+    }
+    
+    .leftRay {
+        display: none;
+    }
+    .rightRay {
+        display: none;
+    }
+    
+    .cloud--wrapper {
+        display: none;
+    }
+    .middleCloud {
+        display: none;
+    }
+    .bigCloud {
+        display: none;
+    }
+    .cloud--wrapper2 {
+        display: none;
+    }
+    .cloud4 {
+        display: none;
+    }
+    
+    .flyingDog--wrapper {
+        display: none;
+    }
+    .flyingDog--wrapper2 {
+        display: none;
+    }
+    .flyingDog {
+        display: none;
+    }
+    .flyingDogCloud {
+        display: none;
+    }
+    
+    .diamond {
+        display: none;
+    }
+}
