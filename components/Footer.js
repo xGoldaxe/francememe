@@ -16,13 +16,13 @@ export default function Footer() {
                             <img className="logoSocial" src="/image/logoSocial/insta.svg" alt="logo" />
                         </a>
                         <a href="https://discord.gg/4NPF4g2">
-                            <img className="logoSocial" src="/image/logoSocial/discord.svg'" alt="logo" />
+                            <img className="logoSocial" src="/image/logoSocial/discord.svg" alt="logo" />
                         </a>
                         <a href="https://youtube.com/channel/UCSmY2zi7ZYdciIk5unSGlSw">
-                            <img className="logoSocial" src="/image/logoSocial/youtube.svg'" alt="logo" />
+                            <img className="logoSocial" src="/image/logoSocial/youtube.svg" alt="logo" />
                         </a>
                         <a href="https://twitch.tv/lotharie">
-                            <img className="logoSocial" src="/image/logoSocial/twitch.svg'" alt="logo" />
+                            <img className="logoSocial" src="/image/logoSocial/twitch.svg" alt="logo" />
                         </a>
                     </div>
                 </div>

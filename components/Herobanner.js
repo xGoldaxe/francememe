@@ -14,7 +14,7 @@ function LinkBlock({ children }) {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <li>{children}</li>
+            <p>{children}</p>
             <motion.div 
                 className='linkLine'
                 initial={{ scaleX: 0 }}
@@ -35,36 +35,36 @@ function Herobanner({ onClick }) {
             <div className="header--wrapper">
                     <img
                         className="leftCity"
-                        src="/image/header--wrapper/leftCity.png"
+                        src="/image/header--wrapper/leftCity.webp"
                         layout="fixed"
-                        width={656}
-                        height={312}
+                        width={1002}
+                        height={476}
                     />
                     <img
                         className="rightCity"
-                        src="/image/header--wrapper/rightCity.png"
+                        src="/image/header--wrapper/rightCity.webp"
 
-                        width={582}
-                        height={304}
+                        width={903}
+                        height={472}
                     />
                     <img
                         className="buildings"
                         src="/image/header--wrapper/buildings.svg"
-                        width={958}
-                        height={177}
+                        width={1194}
+                        height={220}
                     />
                     <img
 
                         className="leftRay"
                         src="/image/header--wrapper/leftRay.svg"
-                        width={1294}
-                        height={626}
+                        width={1732}
+                        height={838}
                     />
                     <img
                         className="rightRay"
                         src="/image/header--wrapper/rightRay.svg"
-                        width={996}
-                        height={398}
+                        width={1333}
+                        height={533}
                     />
                     <div className="cloud--wrapper">
                         <img
@@ -128,11 +128,10 @@ function Herobanner({ onClick }) {
                     </div>
 
                     <img
-                        layout="fixed"
                         className="diamond"
                         src="/image/header--wrapper/diamond.svg"
-                        width={20}
-                        height={28}
+                        width={27}
+                        height={39}
                     />
                 </div>
 
@@ -150,10 +149,11 @@ function Herobanner({ onClick }) {
                     </div>
                     <nav>
                         <ul>
-                            <a href='https://discord.com/'><LinkBlock>Discord</LinkBlock></a>
-                            <a href='https://francememes.com/why-france-memes'><LinkBlock>Pourquoi nous ?</LinkBlock></a>
-                            <a href='https://patreon.com/francememes'><LinkBlock>Patreon</LinkBlock></a>
-                            <a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Support</LinkBlock></a>
+                            <li><a href='https://discord.com/'><LinkBlock>Discord</LinkBlock></a></li>
+                            <li><a href='https://francememes.com/why-france-memes'><LinkBlock>Pourquoi nous ?</LinkBlock></a></li>
+                            <li><a href='https://patreon.com/francememes'><LinkBlock>Patreon</LinkBlock></a></li>
+                            <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Support</LinkBlock></a></li>
+                            <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Shop</LinkBlock></a></li>
                         </ul>
                     </nav>
                     <div className="flex">
@@ -177,12 +177,14 @@ function Herobanner({ onClick }) {
                             height={20}
                         />
                     </p>
+
+                    <div className="heroBanner__buttons">
+                        <a href="https://discord.gg/4NPF4g2"><div className="heroBanner__button white whiteBlackButton">Rejoindre FRANCE MEMES</div></a>
+                        <a href="https://discord.com/channels/724408079550251080/781914269909385237"><div className="heroBanner__button black blackButton">Ouvrir dans le navigateur</div></a>
+                    </div>
                 </div>
 
-                <div className="heroBanner__buttons">
-                    <a href="https://discord.gg/4NPF4g2"><div className="heroBanner__button white whiteBlackButton">Rejoindre FRANCE MEMES</div></a>
-                    <a href="https://discord.com/channels/724408079550251080/781914269909385237"><div className="heroBanner__button black blackButton">Ouvrir dans le navigateur</div></a>
-                </div>
+
             </div>
         </div>
     )

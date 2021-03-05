@@ -4,7 +4,7 @@
     font-family: 'DnProSemiBold';
     font-size: 26px;
 
-    width: 100%;
+    width: 90%;
     padding-bottom: 30px;
 
     text-align: center;
@@ -12,18 +12,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    p {
-        width: 100%;
-        font-family: DnProBoldItalic;
-        margin-bottom: 52px;
+    &__text {
         position: relative;
-        &::after {
+        p {
+            width: 100%;
+            font-family: DnProBoldItalic;
+            margin-bottom: 52px;
+        }
+        img {
+            max-width: 100vw;
             position: absolute;
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
-            content: url('/image/lastCallToAction.svg');
+            z-index: -1;
         }
     }
 
@@ -47,5 +49,10 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 850px) {
+    .lastCallToAction {
+        margin-top: 50px;
+    }
 }

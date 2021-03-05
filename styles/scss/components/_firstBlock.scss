@@ -1,12 +1,45 @@
+.wavy {
+    background: rgba(242, 201, 76, 0.24);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px 0;
+
+    &__wave--top {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+    }
+    &__wave--bottom {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%) rotate(180deg);
+    }
+}
+
+.block {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .firstBlock {
-    margin-top: 100px;
-    max-width: 1300px;
+    // margin-top: 100px;
+    margin: 65px 0;
+    max-width: 1250px;
+    width: 90%;
     display: flex;
     justify-content: center;
     position: relative;
 
-    img {
-        max-width: 55%;
+    &__image {
         height: auto;
         align-self: center;
     }
@@ -15,7 +48,9 @@
         flex-direction: column;
         justify-content: center;
         padding-bottom: 5%;
-        width: 45%;
+        width: max-content;
+        margin: 0 25px;
+
         h2 {
             font-family: DnProSemiBold;
             font-size: 50px;
@@ -31,15 +66,26 @@
     }
 }
 
-
+@media screen and (max-width: 1300px) {
+    .firstBlock {
+        &__image {
+            width: 50%;
+            height: auto;
+            order: 1;
+        }
+        &__text {
+            width: 50%;
+        }
+    }
+}
 @media screen and (max-width: 850px) {
     .firstBlock {
         margin-top: 75px;
         flex-direction: column;
         width: 90%;
         margin-top: 50px;
-        img {
-            max-width: 100%;
+        &__image {
+            width: 100%;
             height: auto;
             order: 1;
         }
@@ -48,7 +94,7 @@
             width: 100%;
 
             padding-bottom: 0;
-            margin-top: 25px;
+            margin: 25px 0 0 0;
             h2 {
                 font-size: 40px;
                 line-height: 50px;
