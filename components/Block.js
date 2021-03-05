@@ -5,21 +5,34 @@ export default function Block({children, waving = false}) {
                 {children}
             </div>
 
-
-            <img 
-                className="wavy__wave--top"
-                src="/image/wave.svg"
-                width="5721"
-                height="82"
-                alt=""
-            />
-            <img 
-                className="wavy__wave--bottom"
-                src="/image/wave.svg"
-                width="5721"
-                height="82"
-                alt=""
-            />
+            <div className="wavy__wave--top">
+                    <img 
+                        src="/image/wave.svg"
+                        width="5721"
+                        height="82"
+                        alt=""
+                    />            
+                    <img 
+                        src="/image/wave.svg"
+                        width="5721"
+                        height="82"
+                        alt=""
+                    />
+            </div>
+            <div className="wavy__wave--bottom">
+                    <img 
+                        src="/image/wave.svg"
+                        width="5721"
+                        height="82"
+                        alt=""
+                    />            
+                    <img 
+                        src="/image/wave.svg"
+                        width="5721"
+                        height="82"
+                        alt=""
+                    />
+            </div>
 
         </div>)
         :

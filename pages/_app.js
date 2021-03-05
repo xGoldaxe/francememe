@@ -3,7 +3,9 @@ import '../styles/main.scss';
 
 
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return <div className="wrapper">
+        <Component {...pageProps} />
+    </div>
   }
   
   // Only uncomment this method if you have blocking data requirements for

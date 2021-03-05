@@ -82,7 +82,7 @@ export default function Index() {
             </div>
             <img 
               className="firstBlock__image"
-              src="/image/block5.webp"
+              src="/image/block4.webp"
               alt="block Picture" 
               width={724}
               height={440}

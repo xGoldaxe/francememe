@@ -1,5 +1,13 @@
+@keyframes waving{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+} 
 .wavy {
-    background: rgba(242, 201, 76, 0.24);
+    background: #FCF2D4;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -11,17 +19,41 @@
         width: 100%;
         height: auto;
         position: absolute;
-        top: 0;
-        transform: translateY(-100%);
+        top: 2px;
+        display: flex;
+        left: -50%;
+        
+        img {
+            height: auto;
+            width: 100vw;
+            transform: translateY(-100%);
+        }
+        :nth-child(2n) {
+            position: relative;
+            right: 1px;
+        }
+        animation: linear 20s infinite waving;
     }
     &__wave--bottom {
         width: 100%;
         height: auto;
         position: absolute;
-        bottom: 0;
-        transform: translateY(100%) rotate(180deg);
+        bottom: 2px;
+        display: flex;
+        left: -50%;
+        img {
+            height: auto;
+            width: 100vw;
+            transform: translateY(100%) rotate(180deg);
+        }
+        :nth-child(2n) {
+            position: relative;
+            right: 1px;
+        }
+        animation: linear 20s infinite reverse waving;
     }
 }
+
 
 .block {
     width: 100vw;
