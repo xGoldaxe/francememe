@@ -11,10 +11,11 @@ function FifthBlock() {
                         <br/><strong>FRANCE MEMES</strong>, aujourd’hui, c’est le plus gros serveur de memes en France, et peut-être bientôt le plus gros serveur Français.
                     </p>
                 </div>
-                <Image src="/image/block5.png"
+                <img src="/image/block5.png"
                     alt="block Picture"
                     width={497}
                     height={431}
+                    alt=""
                     />
             </div>
         </div>

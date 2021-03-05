@@ -22,7 +22,7 @@ export default function Index() {
         
         <AllElementsLayout>
           <Block>
-            <img src='/image/export.png'
+            <img src='/image/block1.webp'
               className="firstBlock__image"
                 alt="first block illustration" 
                 width={825}
@@ -42,7 +42,7 @@ export default function Index() {
                 divertissant qu’il devrait être subventionné par le gouvernement !
                 </p>
             </div>
-            <img src="/image/block2.png"
+            <img src="/image/block2.webp"
               className="firstBlock__image"
                 alt="second block illustration" 
                 width={800}
@@ -50,7 +50,7 @@ export default function Index() {
             />
           </Block>
           <Block>
-            <img src="/image/block3.png "
+            <img src="/image/block3.webp"
               className="firstBlock__image"
                   alt="block Picture" 
                   width={724}
@@ -82,7 +82,7 @@ export default function Index() {
             </div>
             <img 
               className="firstBlock__image"
-              src="/image/block4.png"
+              src="/image/block5.webp"
               alt="block Picture" 
               width={724}
               height={440}

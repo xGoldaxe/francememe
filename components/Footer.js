@@ -29,18 +29,18 @@ export default function Footer() {
                 <div className="nav">
                     <h4>Service</h4>
                     <ul>
-                        <a href='https://discord.com/'><li>Discord</li></a>
-                        <a href='https://francememes.com/why-france-memes'><li>Pourquoi nous?</li></a>
-                        <a href='https://patreon.com/francememes'><li>Patreon</li></a>
-                        <a href='https://discord.com/channels/724408079550251080/758695202100740126'><li>Support</li></a>
-                        <a href='https://discordstatus.com'><li>Statut</li></a>
+                        <li><a href='https://discord.com/'>Discord</a></li>
+                        <li><a href='https://francememes.com/why-france-memes'>Pourquoi nous?</a></li>
+                        <li><a href='https://patreon.com/francememes'>Patreon</a></li>
+                        <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'>Support</a></li>
+                        <li><a href='https://discordstatus.com'>Statut</a></li>
                     </ul>
                 </div>
             </div>
             <hr/>
             <div className="footerBlock">
                 <div className="header__logo">
-                    <img className="logo" src="/image/logo.png" alt="logo" />
+                    <img className="logo" src="/image/logo.webp" alt="logo"/>
                     <p>FRANCE MEMES</p>
                 </div>
                 <a href="https://discord.com/channels/724408079550251080/781914269909385237">

@@ -39,19 +39,21 @@ function Herobanner({ onClick }) {
                         layout="fixed"
                         width={1002}
                         height={476}
+                        alt=""
                     />
                     <img
                         className="rightCity"
                         src="/image/header--wrapper/rightCity.webp"
-
                         width={903}
                         height={472}
+                        alt=""
                     />
                     <img
                         className="buildings"
                         src="/image/header--wrapper/buildings.svg"
                         width={1194}
                         height={220}
+                        alt=""
                     />
                     <img
 
@@ -59,12 +61,14 @@ function Herobanner({ onClick }) {
                         src="/image/header--wrapper/leftRay.svg"
                         width={1732}
                         height={838}
+                        alt=""
                     />
                     <img
                         className="rightRay"
                         src="/image/header--wrapper/rightRay.svg"
                         width={1333}
                         height={533}
+                        alt=""
                     />
                     <div className="cloud--wrapper">
                         <img
@@ -72,14 +76,16 @@ function Herobanner({ onClick }) {
                             src="/image/header--wrapper/middleCloud.svg"
                             width={560}
                             height={140}
-                        />                    
+                            alt=""
+                            />                    
                         <img
                             layout="fixed"
                             className="bigCloud"
                             src="/image/header--wrapper/bigCloud.svg"
                             width={634}
                             height={280}
-                        />
+                            alt=""
+                            />
                     </div>
                     <div className="cloud--wrapper2">
                         <img
@@ -88,29 +94,32 @@ function Herobanner({ onClick }) {
                             src="/image/header--wrapper/middleCloud.svg"
                             width={560}
                             height={140}
-                        />   
+                            alt=""
+                            />   
                         <img
                             layout="fixed"
                             className="cloud4"
                             src="/image/header--wrapper/cloud4.svg"                           
                             width={560}
                             height={140}
-                        />
+                            alt=""
+                            />
                     </div>
                     <div className='flyingDog--wrapper'>
                         <img
                             className="flyingDog"
-                            src="/image/header--wrapper/flyingDog.png"
-                            
+                            src="/image/header--wrapper/flyingDog.png" 
                             width={76}
                             height={64}
-                        />
+                            alt=""
+                            />
                         <img
                             className="flyingDogCloud"
                             src="/image/header--wrapper/flyingDogCloud.svg"
                             width={163}
                             height={27}
-                        />
+                            alt=""
+                            />
                     </div>
                     <div className='flyingDog--wrapper2'>
                         <img 
@@ -118,13 +127,15 @@ function Herobanner({ onClick }) {
                             src="/image/header--wrapper/flyingDog.png"
                             width={76}
                             height={64}
-                        />
+                            alt=""
+                            />
                         <img
                             className="flyingDogCloud"
                             src="/image/header--wrapper/flyingDogCloud.svg"
                             width={163}
                             height={27}
-                        />
+                            alt=""
+                            />
                     </div>
 
                     <img
@@ -132,6 +143,7 @@ function Herobanner({ onClick }) {
                         src="/image/header--wrapper/diamond.svg"
                         width={27}
                         height={39}
+                        alt=""
                     />
                 </div>
 
@@ -140,7 +152,7 @@ function Herobanner({ onClick }) {
                     <div className="header__logo">
                         <img 
                             className="logo" 
-                            src='/image/logo.png'  
+                            src='/image/logo.webp'  
                             alt="logo" 
                             width={76}
                             height={33}

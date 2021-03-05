@@ -11,12 +11,14 @@ export default function Block({children, waving = false}) {
                 src="/image/wave.svg"
                 width="5721"
                 height="82"
+                alt=""
             />
             <img 
                 className="wavy__wave--bottom"
                 src="/image/wave.svg"
                 width="5721"
                 height="82"
+                alt=""
             />
 
         </div>)
