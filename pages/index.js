@@ -1,23 +1,16 @@
-import Herobanner from '../components/Herobanner'
+import Herobanner from '../components/herobanner/Herobanner'
 import FifthBlock from '../components/FifthBlock'
 import Footer from '../components/Footer'
-import { AnimatePresence } from "framer-motion"
 import AllElementsLayout from '../layouts/allElementsLayout'
 import Menu from '../components/menu'
 import React, { useState } from 'react'
 import Block from '../components/Block'
 
 export default function Index() {
-  const [menu, setMenu] = useState(false)
   return (
     <div className="App">
-      <AnimatePresence>
-        {menu && <Menu onClick={() => setMenu(!menu)}/>}      
-      </AnimatePresence>
 
-
-
-      <Herobanner onClick={() => setMenu(!menu)}/>
+      <Herobanner/>
       <div className="allBlock">
         
         <AllElementsLayout>
@@ -101,7 +94,6 @@ export default function Index() {
           </div>
         </div>
       </div>   
-      <Footer />   
     </div>
   );
 }

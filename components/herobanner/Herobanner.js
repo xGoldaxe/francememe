@@ -1,35 +1,9 @@
-import Image from 'next/image'
-
-import { motion, useAnimation } from 'framer-motion'
-
-
-import React, {useState} from 'react'
-
-function LinkBlock({ children }) {
-    const [isHovered, setHovered] = useState(false)
-
-    return (
-        <motion.div 
-            className='linkBlock'
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            <p>{children}</p>
-            <motion.div 
-                className='linkLine'
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: isHovered ? 1 : 0}}
-                transition={{ 
-                    duration: 0.5,
-                    ease: 'easeOut'
-                }}
-            ></motion.div>
-        </motion.div>
-    )
-}
+import React from 'react'
+import Header from '../header'
 
 
-function Herobanner({ onClick }) {
+
+function Herobanner() {
     return (
         <div className="heroBanner">
             <div className="header--wrapper">
@@ -148,35 +122,7 @@ function Herobanner({ onClick }) {
                 </div>
 
             <div className="header__content">
-                <header className="header">
-                    <div className="header__logo">
-                        <img 
-                            className="logo" 
-                            src='/image/logo.webp'  
-                            alt="logo" 
-                            width={76}
-                            height={33}
-                        />
-                        <p>FRANCE MEMES</p>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href='https://discord.com/'><LinkBlock>Discord</LinkBlock></a></li>
-                            <li><a href='https://francememes.com/why-france-memes'><LinkBlock>Pourquoi nous ?</LinkBlock></a></li>
-                            <li><a href='https://patreon.com/francememes'><LinkBlock>Patreon</LinkBlock></a></li>
-                            <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Support</LinkBlock></a></li>
-                            <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Shop</LinkBlock></a></li>
-                        </ul>
-                    </nav>
-                    <div className="flex">
-                        <a href='https://discord.com/channels/724408079550251080/781914269909385237'><div className="header__button smallWhiteButton">Ouvrir</div></a>
-                        <div className="burger" onClick={onClick}>
-                            <div className="burger__line"></div>
-                            <div className="burger__line"></div>
-                            <div className="burger__line"></div>
-                        </div>
-                    </div>
-                </header>
+               <Header />
 
                 <div className="heroBanner__text">
                     <h1>LE lieu pour vos memes</h1>

@@ -1,7 +1,6 @@
 @import './scss/utils/font';
 
 @import './scss/base/base';
-@import './scss/components/heroBanner';
 @import './scss/components/firstBlock';
 @import './scss/components/burger';
 @import './scss/components/lastBlock.scss';
@@ -9,7 +8,12 @@
 @import './scss/components/footer.scss';
 @import './scss/components/header--wrapper.scss';
 @import './scss/components/menu.scss';
+//banner
+@import './scss/components/banner/heroBanner';
+@import './scss/components/banner/whyUsBanner.scss';
 
+//page
+@import './scss/pages/whyUs.scss';
 
 @import './scss/layouts/links.scss';
 

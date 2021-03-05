@@ -1,10 +1,12 @@
 // import App from 'next/app'
+import Footer from '../components/Footer';
 import '../styles/main.scss';
 
 
 function MyApp({ Component, pageProps }) {
     return <div className="wrapper">
         <Component {...pageProps} />
+        <Footer />
     </div>
   }
   
