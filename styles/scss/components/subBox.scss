@@ -32,21 +32,77 @@
         padding: 5px 0 0 0;
         cursor: pointer;
         box-sizing: border-box;
-
         &__title {
             font-size: 47px;
-            margin-left: 20px;
+            margin-left: 15px;
             line-height: 55px;
         }
         &__price {
             font-size: 32px;
             position: absolute;
-            bottom: 7px;
-            right: 13px;
+            bottom: 12px;
+            right: 15px;
         }
 
     }
 }
+
+.subBox__inBox {
+    position: relative;
+    width: calc(100% - 30px);
+    height: 100%;
+    margin: 0 15px;
+    font-family: DnProBold;
+    &__title {
+        font-size: 47px;
+        line-height: 55px;
+    }
+    &__subTitle {
+        font-family: DnProItalic;
+    }
+    h4 {
+        font-size: 20px;
+        margin-block-start: 26px;
+        margin-block-end: 0;
+    }
+    ul{
+        margin: 5px 0 0 15px;
+        padding-inline-start: 0;
+
+        li {
+            list-style-type: none;
+            font-family: DnProLight;
+            line-height: 19px;
+            span {
+                font-family: DnProMedium;
+            }
+        }
+    }
+
+    &__price {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 12px;
+        p {
+            font-size: 32px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------
 
 .amethyst {
     background: linear-gradient(180deg, #BB6BD9 0%, #9B51E0 100%);
@@ -64,4 +120,11 @@
 .sky {
     background: linear-gradient(180deg, #56CCF2 0%, #2D9CDB 100%);
     transform-origin: bottom right;
+}
+
+//--------------------------
+@media screen and (max-width: 850px) {
+    .subBox--container {
+        transform: scale(0.5);
+    }
 }
