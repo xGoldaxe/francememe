@@ -1,6 +1,12 @@
+//utils
+@import './scss/utils/button.scss';
 @import './scss/utils/font';
 
+
+//base
 @import './scss/base/base';
+
+//components
 @import './scss/components/firstBlock';
 @import './scss/components/burger';
 @import './scss/components/lastBlock.scss';
@@ -8,13 +14,17 @@
 @import './scss/components/footer.scss';
 @import './scss/components/header--wrapper.scss';
 @import './scss/components/menu.scss';
+@import './scss/components/header.scss';
+@import './scss/components/subBox.scss';
 //banner
 @import './scss/components/banner/heroBanner';
 @import './scss/components/banner/whyUsBanner.scss';
+@import './scss/components/banner/patreonBanner.scss';
 
 //page
 @import './scss/pages/whyUs.scss';
+@import './scss/pages/patreon.scss';
 
+//layouts
 @import './scss/layouts/links.scss';
 
-@import './scss/utils/button.scss';

@@ -1,0 +1,143 @@
+.patreonBanner--bg {
+    background: linear-gradient(180deg, #EB5757 0%, #F2994A 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    div {
+        width: 977px;
+        height: 824px;
+        background: url("/image/patreon/superChieng.webp");
+        background-size: 100% 100%;
+        mix-blend-mode: luminosity;
+        position: absolute;
+        bottom: -200px;
+        right: -180px;
+        opacity: 0.3;
+    }
+}
+
+.patreonBanner {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    &__content {
+        display: flex; 
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 180px 0 0 180px;
+        &__text {
+            width: 100%;
+            max-width: 571px;
+            position: relative;
+            &__title {
+                display: flex;
+                h2 {
+                    font-size: 53px;
+                    font-family: DnProSemiBold;
+                    line-height: 63px;
+                    span {
+                        font-size: 100px;
+                        font-family: DnProLight;
+                    }
+                }
+                img {
+                    margin-left: 20px;
+                }
+            }
+            p {
+                font-size: 24px;
+                line-height: 28px;
+            }
+            &__info {
+                font-family: DNproMedium;
+            }
+            &__subInfo {
+                font-family: DNproLight;
+            }
+
+            a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                background: white;
+                color: black;
+                font-family: DnProSemiBold;
+                font-size: 23px;
+                line-height: 27px;
+                padding: 15px 0;
+                border-radius: 50px;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .patreonBanner {
+        &__content {
+            padding-left: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .patreonBanner {
+        &__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            &__text {
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .patreonBanner--bg {
+        div {
+            width: calc(977px / 1.5);
+            height: calc(824px / 1.5);
+        }
+    }
+    .patreonBanner {
+        &__content {
+            &__text {
+                &__title {
+                    h2 {
+                        font-size: 40px;
+                        line-height: 50px;
+                        span {
+                            font-size: 80px;
+                        }
+                    }
+                    img {
+                        width: 116px;
+                        height: 116px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .patreonBanner {
+        &__content {
+            &__text {
+                &__title {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

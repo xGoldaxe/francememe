@@ -12,7 +12,7 @@ export default function Header() {
             </AnimatePresence>
 
             <header className="header">
-                <div className="header__logo">
+                <a className="header__logo" href="./">
                     <img 
                         className="logo" 
                         src='/image/logo.webp'  
@@ -21,12 +21,12 @@ export default function Header() {
                         height={33}
                     />
                     <p>FRANCE MEMES</p>
-                </div>
+                </a>
                 <nav>
                     <ul>
                         <li><a href='https://discord.com/'><LinkBlock>Discord</LinkBlock></a></li>
                         <li><a href='/why_us'><LinkBlock>Pourquoi nous ?</LinkBlock></a></li>
-                        <li><a href='https://patreon.com/francememes'><LinkBlock>Patreon</LinkBlock></a></li>
+                        <li><a href='/patreon'><LinkBlock>Patreon</LinkBlock></a></li>
                         <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Support</LinkBlock></a></li>
                         <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Shop</LinkBlock></a></li>
                     </ul>

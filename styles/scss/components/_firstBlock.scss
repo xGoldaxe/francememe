@@ -7,26 +7,25 @@
     }
 } 
 .wavy {
-    background: #FCF2D4;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
     margin: 100px 0;
 
     &__wave--top {
         width: 100%;
         height: auto;
-        position: absolute;
-        top: 2px;
+        position: relative;
+        bottom: -2px;
         display: flex;
         left: -50%;
-        
+        order: -1;
         img {
             height: auto;
             width: 100vw;
-            transform: translateY(-100%);
         }
         :nth-child(2n) {
             position: relative;
@@ -35,16 +34,17 @@
         animation: linear 20s infinite waving;
     }
     &__wave--bottom {
+        order: 2;
         width: 100%;
         height: auto;
-        position: absolute;
+        position: relative;
         bottom: 2px;
         display: flex;
         left: -50%;
         img {
             height: auto;
             width: 100vw;
-            transform: translateY(100%) rotate(180deg);
+            transform: rotate(180deg);
         }
         :nth-child(2n) {
             position: relative;
@@ -62,15 +62,22 @@
     align-items: center;
 }
 
+.wavyBlock {
+    background: #FCF2D4;
+}
+
 .firstBlock {
-    // margin-top: 100px;
-    margin: 65px 0;
-    max-width: 1250px;
-    width: 90%;
+    padding: 65px 0;
+    width: 100%;
     display: flex;
     justify-content: center;
-    position: relative;
-
+    &--container {
+        max-width: 1250px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
     &__image {
         height: auto;
         align-self: center;
@@ -112,10 +119,11 @@
 }
 @media screen and (max-width: 850px) {
     .firstBlock {
-        margin-top: 75px;
-        flex-direction: column;
-        width: 90%;
-        margin-top: 50px;
+        &--container {
+            flex-direction: column;
+            width: 90%;
+        }
+
         &__image {
             width: 100%;
             height: auto;

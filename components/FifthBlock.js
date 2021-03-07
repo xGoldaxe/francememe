@@ -3,7 +3,7 @@ import Image from 'next/image'
 function FifthBlock() {
     return (
         <div className="block">
-            <div className="firstBlock lastBlock">
+            <div className="firstBlock--container lastBlock">
                 <div className="firstBlock__text lastBlock__text">
                     <h2>C’est LA communauté du moment</h2>
                     <p>

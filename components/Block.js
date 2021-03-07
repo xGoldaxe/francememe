@@ -1,8 +1,10 @@
 export default function Block({children, waving = false}) {
     return waving === true ? 
         (<div className="wavy">
-            <div className="firstBlock">
-                {children}
+            <div className="firstBlock wavyBlock">
+                <div className="firstBlock--container">
+                    {children}
+                </div>
             </div>
 
             <div className="wavy__wave--top">
@@ -38,7 +40,9 @@ export default function Block({children, waving = false}) {
         :
         (<div className="block">
             <div className="firstBlock">
-                {children}
+                <div className="firstBlock--container">
+                    {children}
+                </div>
             </div>
         </div>)
 

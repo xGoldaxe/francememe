@@ -1,8 +1,41 @@
+@keyframes test{
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+} 
+
 .whyUsBanner--bg {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, #2D9CDB 0%, #56CCF2 100%);
+    overflow: hidden;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    &__icons {
+        opacity: 0.2; 
+        position: relative;
+        display: flex;
+        transform: translateX(-50%) rotate(-10deg);
+        bottom: 5%;
+        width: min-content;
+
+        &__panel {
+            flex-shrink: 0;
+            width: 160vw;
+            min-width: 2000px;
+            height: 150vh;
+            background-image: url("/image/whyUs/panel.webp");
+            background-repeat: repeat;
+            background-size: 846px auto;
+            animation: linear 60s infinite test;
+        }
+
+    }
 }
 
 .whyUsBanner {
@@ -13,17 +46,19 @@
     align-items: center;
     flex-direction: column;    
     &__content {
-        flex-grow: 2;
         display: flex;
         align-items: center;
         width: 100vw;
+        height: 100%;
+        position: absolute;
         h2 {
-            font-size: 107px;
-            font-family: DnProSemiBold;
-            line-height: 140px;
-            margin-left: 164px;
-            z-index: 2;
+                font-size: 78px;
+                font-family: DnProSemiBold;
+                line-height: 140px;
+                margin-left: 164px;
+                z-index: 2;
             span {
+                font-size: 107px;
                 font-family: LongJohnson;
             }
         }
@@ -48,6 +83,9 @@
         align-items: flex-start;
         h2 {
             margin-left: 0;
+            span {
+                font-size: 100px;
+            }
         }
         &__pictures {
             transform: translateX(-50%);
@@ -61,18 +99,24 @@
     .whyUsBanner__content {
         h2 {
             line-height: 110px;
-            font-size: 80px;
+            font-size: 90px;
+            span {
+                font-size: 80px;
+            }
         }
     }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
     .whyUsBanner__content {
         align-items: center;
         h2 {
-            line-height: 50px;
-            font-size: 40px;
+            line-height: 60px;
+            font-size: 50px;
             position: relative;
             bottom: 20%;
+            span {
+                font-size: 50px;
+            }
         }
     }
 }

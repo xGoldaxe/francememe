@@ -1,0 +1,17 @@
+.patreon {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 190px;
+    margin-top: 90px;
+    &__p {
+        font-family: DnProSemiBold;
+        font-size: 41px;
+        margin-block-end: 37px;
+    }
+    &__h2 {
+        font-family: DnProSemiBold;
+        font-size: 58px;
+    }
+}
