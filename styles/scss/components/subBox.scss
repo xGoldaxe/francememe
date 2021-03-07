@@ -43,7 +43,6 @@
             bottom: 12px;
             right: 15px;
         }
-
     }
 }
 
@@ -91,7 +90,55 @@
     }
 }
 
+.subBoxMobile {
+    &--wrapper {
+        width: 90%;
+        // height: 707px;
+        height: auto;
+        margin-top: 50px;
+        position: relative;
+        z-index: 2;
+        display: none;
+    }
+    &--container {
+        box-sizing: border-box;
+        background: linear-gradient(180deg, rgba(241, 161, 93, 0.444) 0%, rgba(220, 35, 35, 0.296) 100%);
+        width: 100%;
+        padding: 13px;
+        display: flex;
+        padding-bottom: 0;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+    }
+    width: 100%;
+    &__box {
+        width: 100%;
+        margin-bottom: 13px;
 
+        height: 160.5px;
+
+        border-radius: 24px;
+        color: white;
+        font-family: DnProBold;
+        position: relative;
+        box-sizing: border-box;
+        padding: 5px 0 0 0;
+        cursor: pointer;
+        box-sizing: border-box;
+        &__title {
+            font-size: 47px;
+            margin-left: 15px;
+            line-height: 55px;
+        }
+        &__price {
+            font-size: 32px;
+            position: absolute;
+            bottom: 12px;
+            right: 15px;
+        }
+    }
+}
 
 
 
@@ -125,6 +172,9 @@
 //--------------------------
 @media screen and (max-width: 850px) {
     .subBox--container {
-        transform: scale(0.5);
+        display: none;
+    }
+    .subBoxMobile--wrapper {
+        display: block;
     }
 }

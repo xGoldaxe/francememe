@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react' 
-import subBoxAnimation from '../lib/subBoxAnimatio'
+import subBoxAnimation from '../lib/subBoxAnimation'
 
 export default function SubBox() {
     const [boxActivate, setBoxActivate] = useState(false)

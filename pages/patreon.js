@@ -4,6 +4,7 @@ import Menu from '../components/menu'
 import React, { useState } from 'react'
 import Block from '../components/Block'
 import SubBox from '../components/subBox'
+import SubBoxMobile from '../components/subBoxMobile'
 
 export default function Index() {
   const [menu, setMenu] = useState(false)
@@ -18,6 +19,7 @@ export default function Index() {
       <div className="patreon">
         <h2 className="patreon__h2">ABONNEMENTS</h2>
         <SubBox />
+        <SubBoxMobile />
 
         <Block waving={true}>
           <div className="firstBlock__text">
