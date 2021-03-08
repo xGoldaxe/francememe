@@ -26,9 +26,9 @@
 
         &__panel {
             flex-shrink: 0;
-            width: 160vw;
-            min-width: 2000px;
+            width: 4230px;
             height: 150vh;
+            min-height: 2000px;
             background-image: url("/image/whyUs/panel.webp");
             background-repeat: repeat;
             background-size: 846px auto;
@@ -112,11 +112,11 @@
 @media screen and (max-width: 500px) {
     .whyUsBanner__content {
         h2 {
-            line-height: 60px;
-            font-size: 50px;
+            line-height: 80px;
+            font-size: 60px;
 
             span {
-                font-size: 50px;
+                font-size: 60px;
             }
         }
     }
@@ -125,7 +125,7 @@
 @media screen and (max-width: 400px) {
     .whyUsBanner__content {
         h2 {
-            line-height: 50px;
+            line-height: 60px;
             font-size: 40px;
 
             span {
