@@ -29,9 +29,10 @@
         font-family: DnProBold;
         position: relative;
         box-sizing: border-box;
-        padding: 5px 0 0 0;
         cursor: pointer;
         box-sizing: border-box;
+
+        overflow: hidden;
         &__title {
             font-size: 47px;
             margin-left: 15px;
@@ -47,6 +48,7 @@
 }
 
 .subBox__inBox {
+    
     position: relative;
     width: calc(100% - 30px);
     height: max-content;
@@ -55,9 +57,18 @@
     font-family: DnProBold;
 
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
+    &__titleArrow {
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: -18px;
+            transform: translate(-100%, -50%);
+        }
+    }
     &__title {
         font-size: 47px;
         line-height: 55px;
@@ -121,10 +132,13 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        top: 0;
+        left: 0;
     }
     &__inBox {
         &--wrapper {
             min-height: 100%;
+            width: 100%;
             z-index: -1;
         }
         min-height: 430px;

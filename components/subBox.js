@@ -30,28 +30,30 @@ export default function SubBox() {
 function SubBoxBox({activateBox, boxActivate, actualBox, inAnimation, i, color}) {
     return (
         <div className={`subBox__box ${color}`} onClick={() => activateBox(i, boxActivate, inAnimation)}>
-        {boxActivate && !inAnimation && actualBox === i ?
             <div className="subBox__inBox">
-                <p className="subBox__inBox__title">BASIC</p>
-                <p  className="subBox__inBox__subTitle">L'abonnement de base telle qu'il à été pensé</p>
-                <h4>Avantages :</h4>
-                <ul>
-                    <li>- Accès à <span>tous les salons</span> du Discord !</li>   
-                    <li>- <span>Certification automatique</span> (@<span>Certifié</span>) !</li> 
-                    <li>- Des <span>salons exclusifs</span> pour les subs !</li> 
-                    <li>- Un <span>message de remerciement</span> de la part du fondateur sur Patreon !</li> 
-                </ul>
+                <div>
+                    <div className="subBox__inBox__titleArrow">
+                        <img src="/image/patreon/arrow.svg" alt="" />
+                        <p className="subBox__inBox__title">BASIC</p>
+                    </div>
+                    <p  className="subBox__inBox__subTitle">L'abonnement de base telle qu'il à été pensé</p>
+                    <h4>Avantages :</h4>
+                    <ul>
+                        <li>- Accès à <span>tous les salons</span> du Discord !</li>   
+                        <li>- <span>Certification automatique</span> (@<span>Certifié</span>) !</li> 
+                        <li>- Des <span>salons exclusifs</span> pour les subs !</li> 
+                        <li>- Un <span>message de remerciement</span> de la part du fondateur sur Patreon !</li> 
+                    </ul>
+                </div>
                 <div className="subBox__inBox__price">
                     <p>1€ symbolique par mois.</p>
                     <p>1€</p>
                 </div>
             </div>
-            :
-                <>
+                <div className="subBoxMobile__firstBox">
                     <p className="subBox__box__title">BASIC</p>
                     <p className="subBox__box__price">1€</p>
-                </>
-            }
+                </div>
         </div>
     )
 }

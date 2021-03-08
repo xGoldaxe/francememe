@@ -33,7 +33,10 @@ function SubBoxBox({i, color}) {
             <div className="subBoxMobile__inBox--wrapper">
                 <div className="subBoxMobile__inBox">
                     <div>
-                        <p className="subBox__inBox__title">BASIC</p>
+                        <div className="subBox__inBox__titleArrow">
+                            <img src="/image/patreon/arrow.svg" alt="" />
+                            <p className="subBox__inBox__title">BASIC</p>
+                        </div>
                         <p  className="subBox__inBox__subTitle">L'abonnement de base telle qu'il à été pensé</p>
                         <h4>Avantages :</h4>
                         <ul>

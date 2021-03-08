@@ -80,9 +80,12 @@
 @media screen and (max-width: 1250px) {
     .whyUsBanner__content {
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+
         h2 {
             margin-left: 0;
+            position: relative;
+            bottom: 20%;
             span {
                 font-size: 100px;
             }
@@ -108,14 +111,25 @@
 }
 @media screen and (max-width: 500px) {
     .whyUsBanner__content {
-        align-items: center;
         h2 {
             line-height: 60px;
             font-size: 50px;
-            position: relative;
-            bottom: 20%;
+
             span {
                 font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .whyUsBanner__content {
+        h2 {
+            line-height: 50px;
+            font-size: 40px;
+
+            span {
+                font-size: 45px;
             }
         }
     }
