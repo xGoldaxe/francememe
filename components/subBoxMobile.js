@@ -29,8 +29,9 @@ function SubBoxBox({i, color}) {
 
     return (
         <div className={`subBoxMobile__box ${color}`} onClick={() => activateBox(boxActivate, inAnimation)}>
-            {boxActivate && !inAnimation ?
-                <div className="subBox__inBox">
+
+            <div className="subBoxMobile__inBox--wrapper">
+                <div className="subBoxMobile__inBox">
                     <div>
                         <p className="subBox__inBox__title">BASIC</p>
                         <p  className="subBox__inBox__subTitle">L'abonnement de base telle qu'il à été pensé</p>
@@ -42,17 +43,17 @@ function SubBoxBox({i, color}) {
                             <li>- Un <span>message de remerciement</span> de la part du fondateur sur Patreon !</li> 
                         </ul>
                     </div>
-                    <div className="subBox__inBox__price">
+                    <div className="subBoxMobile__inBox__price subBox__inBox__price">
                         <p className="subBox__inBox__price__text">1€ symbolique par mois.</p>
                         <p className="subBox__inBox__price__value">1€</p>
                     </div>
                 </div>
-            :
-                <>
-                    <p className="subBox__box__title">BASIC</p>
-                    <p className="subBox__box__price">1€</p>
-                </>
-            }
+            </div>
+
+            <div className="subBoxMobile__firstBox">
+                <p className="subBox__box__title">BASIC</p>
+                <p className="subBox__box__price">1€</p>
+            </div>
         </div>   
     )
 }
