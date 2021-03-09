@@ -1,0 +1,72 @@
+.subBox__inBox {
+    &--wrapper {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+    
+    position: relative;
+    width: 100%;
+    height: max-content;
+    min-height: 100%;
+
+    font-family: DnProBold;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__titleArrow {
+        position: relative;
+        img {
+            position: absolute;
+            top: 50%;
+            left: -18px;
+            transform: translate(-100%, -50%);
+        }
+    }
+    &__title {
+        font-size: 47px;
+        line-height: 55px;
+    }
+    &__subTitle {
+        font-family: DnProItalic;
+    }
+    h4 {
+        font-size: 20px;
+        margin-block-start: 26px;
+        margin-block-end: 0;
+    }
+    ul{
+        margin: 5px 0 0 15px;
+        padding-inline-start: 0;
+
+        li {
+            list-style-type: none;
+            font-family: DnProLight;
+            line-height: 19px;
+            span {
+                font-family: DnProMedium;
+            }
+        }
+    }
+
+    &__price {
+        width: 100%;
+        text-overflow: "";
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: 32px;
+        position: relative;
+        &__value {
+            height: min-content;
+        }
+    }
+}
+
+.subBox__firstBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}

@@ -15,11 +15,15 @@
 @import './scss/components/header--wrapper.scss';
 @import './scss/components/menu.scss';
 @import './scss/components/header.scss';
-@import './scss/components/subBox.scss';
 //banner
 @import './scss/components/banner/heroBanner';
 @import './scss/components/banner/whyUsBanner.scss';
 @import './scss/components/banner/patreonBanner.scss';
+//subBox
+@import './scss/components/subBox/subBoxMobile.scss';
+@import './scss/components/subBox/subBox.scss';
+@import './scss/components/subBox/inBox.scss';
+
 
 //page
 @import './scss/pages/whyUs.scss';

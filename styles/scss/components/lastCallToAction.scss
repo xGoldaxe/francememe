@@ -31,6 +31,9 @@
 
     &__button {
         padding: 31px 50px;
+        box-sizing: border-box;
+        max-width: 90%;
+
         background: black;
         border-radius: 60px;
 

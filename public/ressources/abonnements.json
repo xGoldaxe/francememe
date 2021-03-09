@@ -1,0 +1,52 @@
+{
+    "abonnements": [
+        {
+            "color": "amethyst",
+            "title": "BASIC",
+            "price":1,
+            "subTitle": "L'abonnement de base tel qu'il à été pensé",
+            "avantages": [
+                "- Accès à tous <span>les salons</span> du Discord !",
+                "- <span>Certification automatique</span> (@<span>Certifié</span>) !",
+                "- Des <span>salons exclusifs</span> pour les subs !",
+                "- Un <span>message de remerciement</span> de la part du fondateur sur Patreon !"
+            ],
+            "sellMessage" : "1€ symbolique par mois."
+        }, 
+        {
+            "color": "lava",
+            "title": "SUPER",
+            "price":5,
+            "subTitle": "Une contribution exemplaire !",
+            "avantages": [
+                "- Un STAFF Prioritaire dans un salon dédié !",
+                "- Un message de remerciement de la part de l’équipe dans #💖",
+                "-remerciements ! + Tous les avantages précédents !"
+            ],
+            "sellMessage" : "Une contribution exemplaire !"
+        }, 
+        {
+            "color": "emerald",
+            "title": "PREMIUM",
+            "price":10,
+            "subTitle": "Un don de générosité !",
+            "avantages": [
+                "- Accès à/aux serveurs Premium, avec l’ensemble du STAFF !",
+                "- Un abonnement d'un mois gratuit à la chaine Twitch du fondateur de FRANCE MEMES ! (https://twitch.tv/lotharie)",
+                "+ Tous les avantages précédents."
+            ],
+            "sellMessage" : "Tu serais INSANE si tu faisais ça !"
+        }, 
+        {
+            "color": "sky",
+            "title": "ULTIMATE",
+            "price":30,
+            "subTitle": "Un soutien incroyable !",
+            "avantages": [
+                "- Un abonnement à Discord Nitro Classic tous les 1ers du mois offert via MP Discord du fondateur !",
+                "+ Tous les avantages précédents."
+            ],
+            "sellMessage" : "Bah là on aurait plus les mots si tu faisais ça !"
+        }
+    ]
+}

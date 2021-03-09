@@ -1,14 +1,16 @@
 import React, {useEffect, useState} from 'react' 
 import subBoxMobileAnimation from '../lib/subBoxMobileAnimation'
+import InBox from './subBox/inBox'
+import ressourceBox from '../public/ressources/abonnements.json'
+
 
 export default function SubBoxMobile() {
-    const COLORS = ['amethyst','lava', 'emerald', 'sky']
     return (
         <div className="subBoxMobile--wrapper">
             <div className="subBoxMobile--container">
                 <div className="subBoxMobile">
-                    {COLORS.map((color, i) => 
-                        <SubBoxBox color={color} i={i}/>
+                    {ressourceBox.abonnements.map((box, i) => 
+                        <SubBoxBox i={i} json={box}/>
                     )}
                 </div>
             </div>
@@ -16,7 +18,7 @@ export default function SubBoxMobile() {
     )
 }
 
-function SubBoxBox({i, color}) {
+function SubBoxBox({i, json}) {
     const [boxActivate, setBoxActivate] = useState(false)
     const [inAnimation, setInAnimation] = useState(false)
 
@@ -28,34 +30,16 @@ function SubBoxBox({i, color}) {
     }
 
     return (
-        <div className={`subBoxMobile__box ${color}`} onClick={() => activateBox(boxActivate, inAnimation)}>
-
+        <div className={`subBoxMobile__box ${json.color}`} onClick={() => activateBox(boxActivate, inAnimation)}>
             <div className="subBoxMobile__inBox--wrapper">
                 <div className="subBoxMobile__inBox">
-                    <div>
-                        <div className="subBox__inBox__titleArrow">
-                            <img src="/image/patreon/arrow.svg" alt="" />
-                            <p className="subBox__inBox__title">BASIC</p>
-                        </div>
-                        <p  className="subBox__inBox__subTitle">L'abonnement de base telle qu'il à été pensé</p>
-                        <h4>Avantages :</h4>
-                        <ul>
-                            <li>- Accès à <span>tous les salons</span> du Discord !</li>   
-                            <li>- <span>Certification automatique</span> (@<span>Certifié</span>) !</li> 
-                            <li>- Des <span>salons exclusifs</span> pour les subs !</li> 
-                            <li>- Un <span>message de remerciement</span> de la part du fondateur sur Patreon !</li> 
-                        </ul>
-                    </div>
-                    <div className="subBoxMobile__inBox__price subBox__inBox__price">
-                        <p className="subBox__inBox__price__text">1€ symbolique par mois.</p>
-                        <p className="subBox__inBox__price__value">1€</p>
-                    </div>
+                    <InBox json={json} />
                 </div>
             </div>
 
             <div className="subBoxMobile__firstBox">
-                <p className="subBox__box__title">BASIC</p>
-                <p className="subBox__box__price">1€</p>
+                <p className="subBoxMobile__firstBox__title">{json.title}</p>
+                <p className="subBoxMobile__firstBox__price">{json.price + "€"}</p>
             </div>
         </div>   
     )

@@ -9,9 +9,23 @@
         font-family: DnProSemiBold;
         font-size: 41px;
         margin-block-end: 37px;
+        overflow-wrap: anywhere;
+        max-width: 90%;
     }
     &__h2 {
         font-family: DnProSemiBold;
         font-size: 58px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .patreon {
+        &__p {
+            font-size: 30px;
+            text-align: center;
+        }
+        &__h2 {
+            font-size: 40px;
+        }
     }
 }
