@@ -6,6 +6,10 @@ export default function InBox({json}) {
                     <img src="/image/patreon/arrow.svg" alt="" />
                     <p className="subBox__inBox__title">{json.title}</p>
                 </div>
+                <div className="subBox__inBox__sub">
+                    <a className="smallWhiteButton" src="https://www.patreon.com/bePatron?u=43528684">S'abonner</a>
+                    <img src="/image/logo.webp" alt=""/>
+                </div>
                 <p  className="subBox__inBox__subTitle">{json.subTitle}</p>
                 <h4>Avantages :</h4>
                 <ul>
@@ -13,6 +17,7 @@ export default function InBox({json}) {
                         <li key={i} dangerouslySetInnerHTML={{__html: avantage}}></li>
                     )}
                 </ul>
+                <a className="smallWhiteButton subBox__inBox__subBot" src="https://www.patreon.com/bePatron?u=43528684">S'abonner</a>
             </div>
             <div className="subBox__inBox__price">
                 <p>{json.sellMessage}</p>

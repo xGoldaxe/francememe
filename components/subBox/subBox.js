@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react' 
-import subBoxAnimation from '../lib/subBoxAnimation'
-import ressourceBox from '../public/ressources/abonnements.json'
-import InBox from './subBox/inBox'
+import subBoxAnimation from '../../lib/subBoxAnimation'
+import ressourceBox from '../../public/ressources/abonnements.json'
+import InBox from './inBox'
 
 export default function SubBox() {
     const [boxActivate, setBoxActivate] = useState(false)
@@ -19,7 +19,7 @@ export default function SubBox() {
         <div className="subBox--container">
             <div className="subBox">
                 {ressourceBox.abonnements.map((box, i) => 
-                    <SubBoxBox activateBox={activateBox} boxActivate={boxActivate} inAnimation={inAnimation} i={i} json={box}/>
+                    <SubBoxBox key={i} activateBox={activateBox} boxActivate={boxActivate} inAnimation={inAnimation} i={i} json={box}/>
                 )}
             </div>
         </div>

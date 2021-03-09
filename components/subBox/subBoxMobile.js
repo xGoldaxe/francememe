@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react' 
-import subBoxMobileAnimation from '../lib/subBoxMobileAnimation'
-import InBox from './subBox/inBox'
-import ressourceBox from '../public/ressources/abonnements.json'
+import subBoxMobileAnimation from '../../lib/subBoxMobileAnimation'
+import InBox from './inBox'
+import ressourceBox from '../../public/ressources/abonnements.json'
 
 
 export default function SubBoxMobile() {
@@ -10,7 +10,7 @@ export default function SubBoxMobile() {
             <div className="subBoxMobile--container">
                 <div className="subBoxMobile">
                     {ressourceBox.abonnements.map((box, i) => 
-                        <SubBoxBox i={i} json={box}/>
+                        <SubBoxBox key={i} i={i} json={box}/>
                     )}
                 </div>
             </div>

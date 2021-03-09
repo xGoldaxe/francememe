@@ -3,8 +3,8 @@ import { AnimatePresence } from "framer-motion"
 import Menu from '../components/menu'
 import React, { useState } from 'react'
 import Block from '../components/Block'
-import SubBox from '../components/subBox'
-import SubBoxMobile from '../components/subBoxMobile'
+import SubBox from '../components/subBox/subBox'
+import SubBoxMobile from '../components/subBox/subBoxMobile'
 
 export default function Index() {
   const [menu, setMenu] = useState(false)

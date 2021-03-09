@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
 
-export default function LinkBlock({ children }) {
+export default function LinkBlock({ children, color }) {
     const [isHovered, setHovered] = useState(false)
 
     return (
@@ -11,9 +11,10 @@ export default function LinkBlock({ children }) {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <p>{children}</p>
+            <p style={{color: color}}>{children}</p>
             <motion.div 
                 className='linkLine'
+                style={{background: color}}
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: isHovered ? 1 : 0}}
                 transition={{ 

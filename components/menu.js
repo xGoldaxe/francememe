@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import LinkBlock from './linkBlock'
+import NavBar from './nav'
 
 export default function Menu({onClick}) {
     return (
@@ -15,10 +17,24 @@ export default function Menu({onClick}) {
                     ease: 'linear'
                 }}
             >
-                <p onClick={onClick}>X</p>
-                <p>Faudra remplir ca bien evidémment</p>
+                <img src="/image/cross.svg" className="menu__cross" alt="X" widht="24" height="24" onClick={onClick}/>
+                <a class="menu__logo" href="./">
+                    <img 
+                        className="logo" 
+                        src="/image/logo.webp" 
+                        alt="logo" 
+                        width="76" 
+                        height="33"
+                    />
+                    <p>FRANCE MEMES</p>
+                </a>
+                {/* <p onClick={onClick}>X</p> */}
+                <hr></hr>
+                <NavBar color="black" />
+                <div className="menu__bottom"></div>
             </motion.div>
             <motion.div 
+                onClick={onClick}
                 key={'background'}
                 className='menu__background'
                 initial={{ opacity: 0 }}

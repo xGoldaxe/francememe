@@ -16,6 +16,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    a {
+        padding: 6px 32px;
+        background: white;
+        color: black;
+        border-radius: 15px;
+        border-bottom: 1px solid black;
+    }
+    &__subBot {
+        display: none;
+        margin: 20px 0;
+    }
+    &__sub {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        display: flex;
+        img {
+            height: 29px;
+            margin-left: 10px;
+        }
+    }
     &__titleArrow {
         position: relative;
         img {
@@ -69,4 +90,15 @@
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+@media screen and (max-width: 620px) {
+    .subBox__inBox {
+        &__sub {
+            display: none;
+        }
+        &__subBot {
+            display: inline-block;
+        }
+    }
 }

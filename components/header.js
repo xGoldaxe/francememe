@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import LinkBlock from './linkBlock'
 import { AnimatePresence } from "framer-motion"
 import Menu from './menu'
+import NavBar from './nav'
 
 export default function Header() {
     const [menu, setMenu] = useState(false)
@@ -22,15 +23,7 @@ export default function Header() {
                     />
                     <p>FRANCE MEMES</p>
                 </a>
-                <nav>
-                    <ul>
-                        <li><a href='https://discord.com/'><LinkBlock>Discord</LinkBlock></a></li>
-                        <li><a href='/why_us'><LinkBlock>Pourquoi nous ?</LinkBlock></a></li>
-                        <li><a href='/patreon'><LinkBlock>Patreon</LinkBlock></a></li>
-                        <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Support</LinkBlock></a></li>
-                        <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'><LinkBlock>Shop</LinkBlock></a></li>
-                    </ul>
-                </nav>
+                <NavBar color="white"/>
                 <div className="flex">
                     <a href='https://discord.com/channels/724408079550251080/781914269909385237'><div className="header__button smallWhiteButton">Ouvrir</div></a>
                     <div className="burger" onClick={() => setMenu(!menu)}>
