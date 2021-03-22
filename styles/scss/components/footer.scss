@@ -24,7 +24,7 @@ footer  {
         position: relative;
         top: -10px;
         li {
-            margin-left: 45px;
+            margin-left: 25px;
             font-size: 15px;
         }
     }
@@ -72,14 +72,30 @@ footer  {
     }
 }
 
-
 @media screen and (max-width: 850px) {
+    ul {
+        padding-inline-start: 0px;
+        flex-direction: column;
+        li {
+            margin-right: 0;
+            margin-bottom: 7px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
     footer {
-        ul {
+        height: auto;
+        padding: 25px 0;
+        .footerBlock--nav {
             flex-direction: column;
+        }
+        ul {
             padding-inline-start: 0px;
             li {
                 margin-left: 0;
+                margin-right: 25px;
             }
         }
         h4 {
@@ -88,6 +104,7 @@ footer  {
         .nav {
             width: max-content;
             margin-right: 5%;
+            width: 100%;
         }
     }
 }

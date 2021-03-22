@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import Block from '../components/Block'
 import SubBox from '../components/subBox/subBox'
 import SubBoxMobile from '../components/subBox/subBoxMobile'
+import LothaireHeads from '../components/lothaireHeads'
 
 export default function Index() {
   const [menu, setMenu] = useState(false)
@@ -40,6 +41,7 @@ export default function Index() {
         <p className="patreon__p">Cliquecliquecliquecliquecliqueclique!!!!!!</p>
         <div className="lastCallToAction__button bigBlackButton">
           <a>S'abonner à <strong>FRANCE MEMES</strong></a>
+          <LothaireHeads />
         </div>
       </div>
     </div>

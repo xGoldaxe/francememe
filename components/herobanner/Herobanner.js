@@ -138,7 +138,7 @@ function Herobanner() {
 
                     <div className="heroBanner__buttons">
                         <a href="https://discord.gg/4NPF4g2"><div className="heroBanner__button white whiteBlackButton">Rejoindre FRANCE MEMES</div></a>
-                        <a href="https://discord.com/channels/724408079550251080/781914269909385237"><div className="heroBanner__button black blackButton">Ouvrir dans le navigateur</div></a>
+                        <a href="https://discord.com/channels/724408079550251080/781914269909385237"><div className="heroBanner__button black blackButton">Ouvrir la boutique Redbubble</div></a>
                     </div>
                 </div>
 

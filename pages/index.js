@@ -87,7 +87,7 @@ export default function Index() {
         <div className="lastCallToAction">
           <div className="lastCallToAction__text">
             <p>Prêt à commencer une nouvelle vie ?</p>
-            <img src="/image/lastCallToAction.svg"/>
+            <img src="/image/lastCallToAction.svg" alt=""/>
           </div>
           <div className="lastCallToAction__button bigBlackButton">
             <a>Rejoindre <strong>FRANCE MEMES</strong></a>

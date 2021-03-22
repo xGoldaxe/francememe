@@ -1,0 +1,42 @@
+.lothaireHeads {
+    position: absolute;
+    width: 90%;
+    max-width: 1104px;
+    height: 278px;
+    z-index: -1;
+    :nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    :nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    :nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        left: 167.26px;
+    }
+    :nth-child(4) {
+        position: absolute;
+        bottom: 0;
+        right: 167.26px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lothaireHeads {
+        :nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+        }
+        :nth-child(4) {
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <footer>
-            <div className="footerBlock">
+            <div className="footerBlock footerBlock--nav">
 
                 <div>
                     <h3>LE lieu pour vos memes</h3>
@@ -29,11 +29,13 @@ export default function Footer() {
                 <div className="nav">
                     <h4>Service</h4>
                     <ul>
-                        <li><a href='https://discord.com/'>Discord</a></li>
-                        <li><a href='https://francememes.com/why-france-memes'>Pourquoi nous?</a></li>
-                        <li><a href='https://patreon.com/francememes'>Patreon</a></li>
+                        <li><a href='https://francememes.com/why_us'>Pourquoi nous?</a></li>
+                        <li><a href='https://francememes.com/patreon'>Abonnements</a></li>
+                        <li><a href='https://discord.com/'>Télécharger Discord</a></li>
+                        <li><a href='https://www.redbubble.com/people/FRANCEMEMES/explore?page=1&sortOrder=recent'>Boutique Redbubble</a></li>
                         <li><a href='https://discord.com/channels/724408079550251080/758695202100740126'>Support</a></li>
-                        <li><a href='https://discordstatus.com'>Statut</a></li>
+                        <li><a href='mailto:contact@francememes.com'>Contact</a></li>
+                        <li><a href='https://discordstatus.com/'>Statut</a></li>
                     </ul>
                 </div>
             </div>
