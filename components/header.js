@@ -25,7 +25,7 @@ export default function Header() {
                 </a>
                 <NavBar color="white"/>
                 <div className="flex">
-                    <a href='https://discord.com/channels/724408079550251080/781914269909385237'><div className="header__button smallWhiteButton">Ouvrir</div></a>
+                    <a target="_blank" href='https://discord.com/channels/724408079550251080/781914269909385237'><div className="header__button smallWhiteButton">Ouvrir</div></a>
                     <div className="burger" onClick={() => setMenu(!menu)}>
                         <div className="burger__line"></div>
                         <div className="burger__line"></div>

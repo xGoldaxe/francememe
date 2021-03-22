@@ -20,7 +20,7 @@ export default function PatreonBanner() {
                         </div>
                             <p className="patreonBanner__content__text__info">Patreon est un service qui permet de faire des dons de façon mensuel en bénéficiant d’avantages exclusifs.</p>
                             <p className="patreonBanner__content__text__subInfo">Cette somme sera prélevé tous les premiers du mois, sans engagement, et vous recevrez des contreparties selon le degré d’abonnement.</p>
-                            <a className="patreonBanner__content__text__button smallWhiteButton" href="https://www.patreon.com/bePatron?u=43528684">À partir de 1€ par mois</a>
+                            <a target="_blank" className="patreonBanner__content__text__button smallWhiteButton" href="https://www.patreon.com/bePatron?u=43528684">À partir de 1€ par mois</a>
                     </div>
                 </div>
             </div>
