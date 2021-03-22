@@ -41,10 +41,10 @@ export default function Footer() {
             </div>
             <hr/>
             <div className="footerBlock">
-                <div className="header__logo">
+                <a href="/" ddress className="header__logo">
                     <img className="logo" src="/image/logo.webp" alt="logo"/>
                     <p>FRANCE MEMES</p>
-                </div>
+                </a>
                 <a href="https://discord.com/channels/724408079550251080/781914269909385237">
                     <div className="button">Ouvrir</div>
                 </a>
