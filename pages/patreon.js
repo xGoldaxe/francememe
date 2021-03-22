@@ -40,7 +40,7 @@ export default function Index() {
 
         <p className="patreon__p">Cliquecliquecliquecliquecliqueclique!!!!!!</p>
         <div className="lastCallToAction__button bigBlackButton">
-          <a>S'abonner à <strong>FRANCE MEMES</strong></a>
+          <a href="https://www.patreon.com/bePatron?u=43528684">S'abonner à <strong>FRANCE MEMES</strong></a>
           <LothaireHeads />
         </div>
       </div>
